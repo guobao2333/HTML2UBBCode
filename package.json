@@ -1,0 +1,15 @@
+{
+  "name": "html2ubb",
+  "version": "0.1.0",
+  "description": "HTML to UBBCode for code highlight",
+  "type": "module",
+  "author": "guobao2333",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@material/web": "^2.2.0",
+    "express": "^4.21.2"
+  }
+}

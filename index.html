@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="是果宝呐">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <title>HTML转换为UBBCode</title>
+</head>
+<body>
+  <h1>HTML转换为UBBCode<div style="font-size: 20px;">代码高亮专用</div></h1>
+
+  <md-outlined-button class="drop-zone center" id="dropZone">将文件拖放到此处或单击上传</md-outlined-button>
+  <md-outlined-text-field id="input" type="textarea" label="将HTML代码粘贴到此处"></md-outlined-text-field>
+
+  <div class="center">
+  <md-filled-button id="convertBtn" aria-label="转换为UBBCode">转换</md-filled-button>
+  <md-filled-tonal-button id="saveBtn" aria-label="将结果保存到文件">下载</md-filled-tonal-button>
+  <md-filled-tonal-button id="copyBtn"  aria-label="复制到剪贴板">复制</md-filled-tonal-button>
+  </div>
+
+  <md-outlined-text-field id="output" type="textarea" translate="no" readOnly="true" label="转换后的UBB代码"></md-outlined-text-field>
+  <p class="md-typescale-body-medium">这是一个专门用于将带有样式的源代码HTML转换为UBBCode(论坛代码)的在线工具，你可以通过<a href="https://syntaxhighlighter.app" style="color: #0078d7;" target="_blank">Syntax Highlighter</a>网站高亮你的代码，并通过本工具转换为UBBCode，以便在Discuz等框架的论坛中使用。</p>
+  <p><b>但需要注意，仅会对基本样式进行转换，其他标签一律不做处理。</b></p>
+</body>
+</html>
