@@ -22,5 +22,5 @@ If you are the first contribution, then please check [How To Contribute?](https:
 
 ## Licence
 
-    Copyright 2025 shiguobaona. All rights reserved.
-    Source code is distributed under MIT license.
+    Copyright © 2025 shiguobaona.
+    The source code is licensed under the MIT license.
