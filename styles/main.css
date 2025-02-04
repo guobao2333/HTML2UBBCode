@@ -8,17 +8,6 @@ body {
   margin: 20px;
 }
 
-h1 {
-  font-size: 36px;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    /* 在小屏幕上使用更小的字体 */
-    font-size: 28px;
-  }
-}
-
 .center {
   display: flex;
   justify-content: center;
